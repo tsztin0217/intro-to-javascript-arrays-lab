@@ -62,3 +62,45 @@ Complete Exercise 5 in the space below:
 foods.splice(2, 0, 'tofu');
 
 console.log('Exercise 5 result:', foods);
+
+/*
+Exercise 6: Replace elements
+
+1) Replace 'pizza' in the `foods` array with 'sushi' and 'cupcake'.
+
+Complete Exercise 6 in the space below:
+*/
+
+foods.splice(1, 1, 'sushi', 'cupcake');
+
+console.log('Exercise 6 result:', foods);
+
+/*
+Exercise 7: Using the `slice()` method
+
+1) Use the `slice()` method to create a new array that contains 'sushi' and 
+   'cupcake'.
+
+2) Assign it to a variable named `yummy`.
+
+Complete Exercise 7 in the space below:
+*/
+
+const yummy = foods.slice(1,3)
+
+console.log('Exercise 7 result:', yummy);
+
+/*
+Exercise 8: Finding an index
+
+1) Using the `indexOf()` method, find the index of the string 'tofu' in the 
+   `foods` array. 
+
+2) Assign it to a variable named `soyIdx`.
+
+Complete Exercise 8 in the space below:
+*/
+
+const soyIdx = foods.indexOf("tofu");
+
+console.log('Exercise 8 result:', soyIdx);
