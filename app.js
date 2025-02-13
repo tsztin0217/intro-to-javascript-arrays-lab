@@ -194,16 +194,31 @@ const fizz = [];
 const buzz = [];
 const fizzbuzz = [];
 
-nums.forEach(num => {
-    switch (true) {
-      case (num % 3 === 0 && num % 5 === 0): 
+// nums.forEach(num => {
+//     switch (true) {
+//       case (num % 3 === 0 && num % 5 === 0): 
+//         fizzbuzz.push(num);
+//       case (num % 3 === 0):
+//         fizz.push(num);
+//       case (num % 5 === 0):
+//         buzz.push(num);
+//     }
+//   });
+
+// alternative version
+for (const num of nums) {
+    if (num % 3 === 0 && num % 5 === 0) {
         fizzbuzz.push(num);
-      case (num % 3 === 0):
+    }
+    if (num % 3 === 0) {
         fizz.push(num);
-      case (num % 5 === 0):
+    }
+    if (num % 5 === 0) {
         buzz.push(num);
     }
-  });
+ {
+
+ }}
 
 
 console.log('Exercise 12 Results:');
